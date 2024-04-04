@@ -222,8 +222,8 @@ header{
     .btn {
         padding: 10px 20px;
         width: 200px;
-        width: 20vw;
-        min-width: 200px;
+        /*width: 20vw;
+        min-width: 200px;*/
         margin: 20px;
         border-radius: 12px;
         font-weight: bold;
@@ -249,6 +249,11 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .image-one{
+      max-width: 100%;
+      height: auto;
     }
 
     .block-text{
@@ -413,10 +418,10 @@ header{
 .card-container .image-icons {
     z-index: 10;
     position: absolute;
-    top: -250px;
+    top: -270px;
 }
 
-.oscar {
+.mike {
     text-align: center;
     margin-top: 140px;
 }
@@ -453,6 +458,14 @@ header{
 width: 100%;
 }
 
+@media (max-width: 500px){
+  #btn-5{
+    margin: 0;
+    width: 150px;
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 768px){
   .final-btns{
     display: block;
@@ -461,7 +474,7 @@ width: 100%;
 }
   
 .rounded-btn-holder {
-    margin-left: auto; 
+    margin-right: 20px; 
 }
 
 .secondary.rounded {
@@ -482,6 +495,7 @@ width: 100%;
   .btn-container{
   width: 100%;
   }
+
 }
 
 
@@ -570,10 +584,6 @@ footer {
     .hero-text {
       max-width: 85%;
        }
-       .image-one{
-        width: 400px;
-        height: 400px;
-       }
  
        .content-three{
         display: flex;
@@ -627,11 +637,6 @@ footer {
         padding: 20px; /* Adds some padding around the content */
        }
 
-       .image-one{
-        width: 250px;
-        height: 250px;
-       }
-
 
       
   .hero-block-one > * {
@@ -674,5 +679,11 @@ footer {
       font-size: 24px;
      }
    
+  }
+
+  @media ( max-width: 500px){
+    h2{ font-size:22px ;}
+    h3 { font-size: 20px ;}
+    p{ font-size: 18px;}
   }
 
