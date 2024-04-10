@@ -89,6 +89,13 @@ header{
   gap: 2rem;
 }
 
+.angle{
+  background-color: #3d3d3d;
+  border-radius: 15px;
+  margin-top: 3px ;
+  width: 15px;
+ }
+
 .navbar .toggle_btn{
   color: white;
   font-size: 1.5rem;
@@ -119,6 +126,30 @@ header{
 .action-btn:active{
   scale: 0.95;
 }
+
+/* DROPDOWN */
+
+.dropdown{
+  margin-top:100px ;
+ }
+
+ul li ul.dropdown li {
+  display: block;
+}
+
+ul li ul.dropdown {
+  width: fit-content;
+  background: #212121;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  padding-left: 10px;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+
 
 /* DROPDOWN MENU */
 .dropdown_menu{
@@ -180,14 +211,31 @@ header{
    
     p{
      font-weight: 500;
-     font-size: 22px;
+     font-size: 18px;
     }
 
     .hero-text {
         text-align: center;
         margin: 10px auto;
-        max-width: 60%;
-        /*max-width: 32ch;*/
+        max-width: 650px;
+        line-height: 1.75em;
+        word-spacing: 2px;
+      }
+
+      .hero-text-1 {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 950px;
+        line-height: 1.5em;
+        word-spacing: 2px;
+      }
+
+      .hero-text-2 {
+        text-align: center;
+        margin: 10px auto;
+        max-width: 1000px;
+        line-height: 1.6em;
+        word-spacing: 2px;
       }
 
       @media (max-width: 1200px){
@@ -197,17 +245,18 @@ header{
       }
 
     h1{
-        font-size: 26px;
+        font-size: 30px;
         font-weight: 500;
+        line-height: 1.5em;
     }
 
     h2{
-      font-size: 25px;
+      font-size: 26px;
       font-weight: 600;
     }
    
     h3{
-        font-size: 24px;
+        font-size: 22px;
         display: flex;
         text-align: center;
         margin-top: 80px;
@@ -252,13 +301,13 @@ header{
     }
 
     .image-one{
-      max-width: 100%;
+      max-width: 400px;
       height: auto;
     }
 
     .block-text{
         margin: 20px;
-        max-width: 45%;
+        line-height: 1.5em;
     }
 
     /* Ensures that the parent container is a flex container */
@@ -307,8 +356,10 @@ header{
 }
 
 .image-two{
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
+  position: relative;
+  right: 20%;
 }
 
 .hero-block-two{
@@ -328,7 +379,7 @@ header{
 }
 
 .image-three{
-  max-width: 100%;
+  max-width: 400px;
   height: auto
 }
 
@@ -348,8 +399,10 @@ header{
 }
 
 .image-four{
-  max-width: 100%;
+  max-width: 400px;
   height: auto;
+  position: relative;
+  right: 20%;
 }
 
 .content-one{
@@ -369,8 +422,10 @@ header{
 }
 
 .image-five{
-  max-width: 100%;
-  height: auto
+  max-width: 450px;
+  height: auto;
+  position: relative;
+  left: 15%;
 }
 
 
@@ -390,7 +445,7 @@ header{
 }
 
 .image-six{
-  max-width: 100%;
+  max-width: 420px;
   height: auto;
 }
     
@@ -574,11 +629,6 @@ footer {
     max-width: 45%;
     }      
   /* Styling for responsiveness*/
-  /*@media (max-width:900px){
-.block-text{
-  max-width: 100%;
-}
-  }*/
 
   @media (max-width: 768px){
     .hero-text {
@@ -685,5 +735,13 @@ footer {
     h2{ font-size:22px ;}
     h3 { font-size: 20px ;}
     p{ font-size: 18px;}
+
+    .image-one{ width: 275px;}
+    .image-two {  width: 300px;}
+    .image-three {  width: 275px;}
+    .image-four { width: 275px;}
+    .image-five {left: -10%;  width: 275px;}
+    .image-six { width: 300px;}
+    .image-seven { width: 300px;}
   }
 
