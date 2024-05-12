@@ -26,6 +26,8 @@ backToTopBtn.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
 const actionBtn = document.getElementById("action_btn");
 
 actionBtn.addEventListener("click", ()=> {
@@ -68,6 +70,7 @@ btnFive.addEventListener("click", ()=> {
  window.location.href = "http://localhost:3000/join"
 })
 
+})
 /* const angleOne = document.getElementById("angle-one")
 var dropdownMenu = document.getElementById('dropdownMenu');
 
