@@ -29,13 +29,13 @@ backToTopBtn.addEventListener("click", () => {
 const actionBtn = document.getElementById("action_btn");
 
 actionBtn.addEventListener("click", ()=> {
- window.location.href = "http://localhost:3000/join"
+ window.location.href = "https://product-manager-o8pw.onrender.com/join"
 })
 
 const actionBtnTwo = document.getElementById("action_btn2");
 
 actionBtnTwo.addEventListener("click", ()=> {
- window.location.href = "http://localhost:3000/join"
+ window.location.href = "https://product-manager-o8pw.onrender.com/join"
 })
 
 const btn = document.getElementById("btn");
@@ -68,7 +68,7 @@ btnFive.addEventListener("click", ()=> {
  window.location.href = "http://localhost:3000/join"
 })
 
-const angleOne = document.getElementById("angle-one")
+/* const angleOne = document.getElementById("angle-one")
 var dropdownMenu = document.getElementById('dropdownMenu');
 
   // Add click event listener to the image
@@ -101,7 +101,7 @@ angleImages.forEach(function(image) {
             image.classList.remove('rotate180');
         }
     });
-});
+}); */
 
 
 
